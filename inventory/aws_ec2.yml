@@ -1,0 +1,32 @@
+plugin: amazon.aws.aws_ec2
+aws_profile: default
+
+regions:
+  - "us-central-1"
+
+strict: False
+
+keyed_groups:
+- key: tags
+  prefix: tag
+
+filters:
+  tag:Name:
+    - pbl-bastion
+    - pbl-nginx
+    - pbl-tooling
+    - pbl-wordpress
+    - pbl-sonarqube
+    - pbl-artifactory
+    - pbl-jenkins
+  instance-state-name : running
+  
+hostnames:
+# a list in order of precedence for hostname variables.
+  - private-ip-address
+  - tag:Name
+  - dns-name
+  - ip-address
+
+compose:
+  ansible_host: private_ip_address

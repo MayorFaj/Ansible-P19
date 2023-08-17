@@ -1,0 +1,5 @@
+---
+- hosts: tag_Name_pbl_jfrog
+  become: true
+  roles:
+     - artifactory

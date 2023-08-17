@@ -1,0 +1,11 @@
+---
+# handlers file for sonarqube
+- name: Restart postgresql
+  ansible.builtin.service:
+    name: postgresql
+    state: restarted
+
+- name: Restart sonarqube
+  ansible.builtin.service:
+    name: sonar
+    state: restarted
