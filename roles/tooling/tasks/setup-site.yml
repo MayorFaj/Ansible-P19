@@ -6,7 +6,7 @@
  
 - name: copy the html from tooling to /var/www/html
   ansible.builtin.copy:
-    src: /home/ec2-user/tooling/html/.
+    src: /home/ec2-user/tooling/html/
     dest: /var/www/html/
     mode: '0755'
     remote_src: yes

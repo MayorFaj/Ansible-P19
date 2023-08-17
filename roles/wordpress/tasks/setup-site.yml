@@ -19,7 +19,7 @@
 
 - name: deploy the code
   ansible.builtin.copy:
-    src: /home/ec2-user/wordpress/.
+    src: /home/ec2-user/wordpress/
     dest: /var/www/html/
     force: yes
     remote_src: yes
