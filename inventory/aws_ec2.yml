@@ -12,13 +12,13 @@ keyed_groups:
 
 filters:
   tag:Name:
-    - bastion-asg
-    - nginx-asg
-    - tooling-asg
-    - wordpress-asg
-    - pbl-sonarqube
-    - pbl-artifactory
-    - pbl-jenkins
+    - bastion_asg
+    - nginx_asg
+    - tooling_asg
+    - wordpress_asg
+    - pbl_sonarqube
+    - pbl_artifactory
+    - pbl_jenkins
   instance-state-name : running
   
 hostnames:

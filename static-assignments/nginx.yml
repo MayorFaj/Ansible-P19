@@ -1,5 +1,5 @@
 ---
-- hosts: tag_Name_nginx-asg
+- hosts: tag_Name_nginx_asg
   become: true
   roles:
      - nginx
