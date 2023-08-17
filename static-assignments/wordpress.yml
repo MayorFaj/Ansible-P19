@@ -1,5 +1,5 @@
 ---
-- hosts: tag_Name_pbl_wordpress
+- hosts: tag_Name_wordpress-asg
   become: true
   roles:
      - wordpress

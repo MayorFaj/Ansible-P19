@@ -1,5 +1,5 @@
 ---
-- hosts: tag_Name_pbl_jfrog
+- hosts: tag_Name_pbl-artifactory
   become: true
   roles:
      - artifactory

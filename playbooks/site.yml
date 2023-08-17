@@ -1,25 +1,25 @@
 ---
-- hosts: tag_Name_pbl_nginx
+- hosts: tag_Name_nginx-asg
 - name: nginx assignment
   import_playbook: ../static-assignments/nginx.yml
 
-- hosts: tag_Name_pbl_tooling 
+- hosts: tag_Name_tooling-asg
 - name: tooling assignment
   import_playbook: ../static-assignments/tooling.yml
 
-- hosts: tag_Name_pbl_wordpress
+- hosts: tag_Name_wordpress-asg
 - name: wordpress assignment
   import_playbook: ../static-assignments/wordpress.yml
 
-- hosts: tag_Name_pbl_jenkins
+- hosts: tag_Name_pbl-jenkins
 - name: jenkins assignment
   import_playbook: ../static-assignments/jenkins.yml  
 
-- hosts: tag_Name_pbl_artifactory
+- hosts: tag_Name_pbl-artifactory
 - name: artifactory assignment
   import_playbook: ../static-assignments/jfrog.yml
 
-- hosts: tag_Name_pbl_sonarqube
+- hosts: tag_Name_pbl-sonarqube
   user: ubuntu
 - name: sonarqube assignment
   import_playbook: ../static-assignments/sonar.yml
