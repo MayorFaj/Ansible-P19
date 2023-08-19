@@ -50,3 +50,11 @@
      name: httpd 
      state: started 
      enabled: yes
+  notify: Restart httpd
+
+- name: ensure php-fpm is started and enabled
+  ansible.builtin.service:
+     name: php-fpm
+     state: reloaded
+     enabled: yes
+  notify: Restart php-fpm
