@@ -19,7 +19,7 @@
     regexp: "{{ item.regexp }}"
     replace: "{{ item.line }}"
   loop:
-    - { regexp: '^mysql.tooling.svc.cluster.local', line: "terraform-20230818095124440800000004.ct4xuc4lnhzj.eu-central-1.rds.amazonaws.com" }
-    - { regexp: '^admin', line: "mayor" }
-    - { regexp: '^tooling', line: "mayordb" }
-    - { regexp: '^admin', line: "Ashabi_123" }
+    - { regexp: '^localhost', line: "terraform-20230818095124440800000004.ct4xuc4lnhzj.eu-central-1.rds.amazonaws.com" }
+    - { regexp: '^username_here', line: "mayor" }
+    - { regexp: '^database_name_here', line: "mayordb" }
+    - { regexp: '^password_here', line: "Ashabi_123" }
