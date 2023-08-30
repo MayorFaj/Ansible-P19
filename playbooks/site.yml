@@ -1,15 +1,15 @@
 ---
-# - hosts: tag_Name_nginx_asg
-# - name: nginx assignment
-#   import_playbook: ../static-assignments/nginx.yml
+- hosts: tag_Name_nginx_asg
+- name: nginx assignment
+  import_playbook: ../static-assignments/nginx.yml
 
-# - hosts: tag_Name_tooling_asg
-# - name: tooling assignment
-#   import_playbook: ../static-assignments/tooling.yml
+- hosts: tag_Name_tooling_asg
+- name: tooling assignment
+  import_playbook: ../static-assignments/tooling.yml
 
-# - hosts: tag_Name_wordpress_asg
-# - name: wordpress assignment
-#   import_playbook: ../static-assignments/wordpress.yml
+- hosts: tag_Name_wordpress_asg
+- name: wordpress assignment
+  import_playbook: ../static-assignments/wordpress.yml
 
 - hosts: tag_Name_pbl_jenkins
 - name: jenkins assignment
