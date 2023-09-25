@@ -11,16 +11,16 @@
 - name: wordpress assignment
   import_playbook: ../static-assignments/wordpress.yml
 
-# - hosts: tag_Name_pbl_jenkins
-# - name: jenkins assignment
-#   import_playbook: ../static-assignments/jenkins.yml  
+- hosts: tag_Name_pbl_jenkins
+- name: jenkins assignment
+  import_playbook: ../static-assignments/jenkins.yml  
 
-# - hosts: tag_Name_pbl_artifactory
-# - name: artifactory assignment
-#   import_playbook: ../static-assignments/jfrog.yml
+- hosts: tag_Name_pbl_artifactory
+- name: artifactory assignment
+  import_playbook: ../static-assignments/jfrog.yml
 
-# - hosts: tag_Name_pbl_sonarqube
-#   user: ubuntu
-# - name: sonarqube assignment
-#   import_playbook: ../static-assignments/sonar.yml
+- hosts: tag_Name_pbl_sonarqube
+  user: ubuntu
+- name: sonarqube assignment
+  import_playbook: ../static-assignments/sonar.yml
   
